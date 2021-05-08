@@ -1,0 +1,60 @@
+$tamanoTexto: 10rem;
+$modo: dark;
+
+
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    img{
+      
+        width: 25rem;
+        height: 23rem;
+    }
+  }
+  
+  .textNosotros {
+    width: $tamanoTexto*4;
+    height: $tamanoTexto*2;
+    text-align: justify;
+    margin: 10px;
+    font-style: normal;
+    font-family: 'Roboto';
+    font-weight: 300;
+    display: inline-block; }
+  
+  
+  .mas{
+    @extend.nosotros;
+    margin: 20px;
+    @if $modo == light {
+    background-color: whitesmoke;
+    } @else if $modo==dark{background-color: rgb(12, 12, 12);}
+    h2{
+      font-size: 25px;
+      text-decoration: underline;
+      font-family: 'Staatliches', Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+      margin: 30px;
+      @if $modo == light {
+        color: rgb(12, 12, 12);
+        } @else if $modo==dark{color: whitesmoke;}
+      }
+    p{
+      @extend.textNosotros;
+      width: $tamanoTexto;
+      height: $tamanoTexto;
+      @if $modo == light {
+        color: rgb(12, 12, 12);
+        } @else if $modo==dark{color: whitesmoke;}
+      }
+  }
+
+  
+  
+  
+
+  
+
