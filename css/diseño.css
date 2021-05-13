@@ -1,3 +1,6 @@
+#seccionNosotros {
+  grid-area: nosotros; }
+
 .nosotros, .mas {
   display: flex;
   flex-wrap: wrap;
@@ -5,6 +8,11 @@
   .nosotros img, .mas img {
     width: 25rem;
     height: 23rem; }
+
+.imgNosotros {
+  margin: 20px;
+  width: 350px;
+  height: 300px; }
 
 .textNosotros, .mas p {
   width: 40rem;
@@ -33,6 +41,45 @@
     height: 10rem;
     color: whitesmoke; }
 
+#secionServicios {
+  grid-area: servicios; }
+
+.flexServicios {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 100px; }
+  .flexServicios :hover {
+    transform: scale(1.1, 1.1); }
+
+.servicio {
+  width: 18rem;
+  height: 18rem;
+  position: static; }
+
+#seccionClientes {
+  grid-area: clientes;
+  margin-bottom: 120px; }
+
+.galeriaClientesIndex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-around; }
+  @media only screen and (min-width: 1024px) {
+    .galeriaClientesIndex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; } }
+  @media only screen and (min-width: 768px) {
+    .galeriaClientesIndex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; } }
+
 * {
   Margin: 0;
   padding: 0; }
@@ -53,13 +100,15 @@ div {
   text-align: left;
   margin-bottom: 20px;
   font-size: 12px; }
-
-#menuRedes ul li {
-  background-color: snow;
-  display: inline;
-  padding: 2px 7px;
-  margin: 5px;
-  color: #430dc4; }
+  #menuRedes ul li {
+    background-color: snow;
+    display: inline;
+    padding: 2px 7px;
+    margin: 5px;
+    color: #430dc4; }
+  #menuRedes img {
+    height: 25px;
+    width: 25px; }
 
 #seccionPrincipal {
   grid-area: navbar;
@@ -69,13 +118,16 @@ div {
   text-align: center;
   top: 0px;
   margin: 10px 0px 30px 0px; }
+  #seccionPrincipal a {
+    color: white;
+    text-decoration: none; }
 
-#seccionPrincipal a {
-  color: white;
-  text-decoration: none; }
+.navegacion {
+  width: 100vw; }
 
 .fotoLogo {
-  max-width: 250px; }
+  max-width: 250px;
+  margin: 15px; }
 
 #menuPrincipal ul li {
   display: block;
@@ -86,43 +138,6 @@ div {
   display: inline-block;
   background-image: linear-gradient(to bottom right, #7d8cc4, white);
   width: 100vw; }
-
-#seccionNosotros {
-  grid-area: nosotros; }
-
-#secionServicios {
-  grid-area: servicios; }
-
-#seccionClientes {
-  grid-area: clientes;
-  margin-bottom: 120px; }
-
-.flexServicios {
-  grid-area: servicios;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 120px; }
-
-.servicio:hover {
-  transform: scale(1.3, 1.3); }
-
-.galeriaClientesIndex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: space-around;
-  justify-content: space-around; }
-
-.galeriaClientes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  align-items: center;
-  margin: 50px 50px 120px 50px; }
 
 .superttl {
   font-size: 50px;
@@ -149,10 +164,6 @@ div {
     grid-template-areas: "header header"  "navbar navbar"  "nosotros clientes" "servicios clientes" "footer footer";
     grid-template-columns: 3fr 1fr;
     grid-column-gap: 10px; }
-  .galeriaClientesIndex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
   .superttl {
     font-size: 60px;
     text-decoration: underline;
@@ -183,9 +194,9 @@ div {
     position: sticky;
     top: 0px;
     margin: 10px 0px 30px 0px; }
-  #seccionPrincipal a {
-    color: white;
-    text-decoration: none; }
+    #seccionPrincipal a {
+      color: white;
+      text-decoration: none; }
   #menuPrincipal ul li {
     display: inline;
     padding: 5px 12px;
@@ -203,10 +214,6 @@ div {
     grid-template-areas: "header header"  "navbar navbar"  "nosotros clientes" "servicios clientes" "footer footer";
     grid-template-columns: 4fr 1fr;
     grid-column-gap: 10px; }
-  .galeriaClientesIndex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
   .superttl {
     font-size: 40px;
     text-decoration: underline;
@@ -225,11 +232,6 @@ div {
     text-align: center; }
   .fotoLogo {
     max-width: 500px; }
-  #menuRedes ul li {
-    display: inline;
-    padding: 2px 7px;
-    margin: 5px;
-    color: #430dc4; }
   #seccionPrincipal {
     grid-area: navbar;
     background-color: #7d8cc4;
@@ -238,9 +240,9 @@ div {
     position: sticky;
     top: 0px;
     margin: 10px 0px 30px 0px; }
-  #seccionPrincipal a {
-    color: white;
-    text-decoration: none; }
+    #seccionPrincipal a {
+      color: white;
+      text-decoration: none; }
   #menuPrincipal ul li {
     display: inline;
     padding: 5px 12px;
@@ -250,4 +252,9 @@ div {
     align-content: left;
     text-align: left;
     margin-bottom: 20px;
-    font-size: 18px; } }
+    font-size: 18px; }
+    #menuRedes ul li {
+      display: inline;
+      padding: 2px 7px;
+      margin: 5px;
+      color: #430dc4; } }

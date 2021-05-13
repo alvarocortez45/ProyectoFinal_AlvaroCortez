@@ -1,0 +1,26 @@
+$margen_flex: 10px;
+
+#secionServicios{
+    grid-area: servicios;   
+}
+
+.flexServicios{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: $margen_flex*10;
+    :hover{
+        transform: scale(1.1,1.1);
+    }
+}
+
+.servicio{
+    width: 18rem; 
+    height: 18rem; 
+    position:static;
+}
+
+
+
+

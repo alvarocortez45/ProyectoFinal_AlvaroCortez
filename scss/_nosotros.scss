@@ -2,6 +2,11 @@ $tamanoTexto: 10rem;
 $modo: dark;
 
 
+#seccionNosotros{
+  grid-area: nosotros;
+  
+}
+
 .nosotros {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +16,12 @@ $modo: dark;
         width: 25rem;
         height: 23rem;
     }
+  }
+  
+  .imgNosotros{
+    margin: 20px; 
+    width: 350px; 
+    height: 300px;
   }
   
   .textNosotros {
