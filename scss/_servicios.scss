@@ -1,7 +1,10 @@
 $margen_flex: 10px;
 
 #secionServicios{
-    grid-area: servicios;   
+    grid-area: servicios;
+    margin-top: $margen_flex*10;
+    align-items: center;
+    justify-content: center;
 }
 
 .flexServicios{
@@ -9,10 +12,9 @@ $margen_flex: 10px;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: $margen_flex*10;
-    :hover{
-        transform: scale(1.1,1.1);
-    }
+    margin-top: $margen_flex*2;
+    margin-bottom: $margen_flex*2;
+    
 }
 
 .servicio{
