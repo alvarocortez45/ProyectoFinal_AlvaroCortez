@@ -1,6 +1,7 @@
 @import "_nosotros" ;
 @import "servicios";
 @import "clientes";
+@import "footer";
 
 * {
     Margin:0;
@@ -8,8 +9,6 @@
  }
  
 div{
-    
-    
     padding: 4px 10px;
     align-content: center;
     text-align: center;
@@ -69,23 +68,6 @@ div{
     display: block;
     padding: 5px 12px;
     
-}
-
-#seccionLegales{
-    grid-area: footer;
-    font-family: 'Roboto';
-    display: flex;
-    flex-flow: row wrap;
-    padding: 20px;
-    margin-top: 50px;
-    background-image: linear-gradient(to bottom right, #7d8cc4, white) ;
-    width: 100vw;
-    justify-content: space-around;
-    align-items: initial;
-    img{
-        width: 220px;
-        height: 60px;
-    }
 }
 
 .superttl {
