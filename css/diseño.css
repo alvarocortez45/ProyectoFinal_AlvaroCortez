@@ -96,6 +96,8 @@
   #seccionLegales img {
     width: 220px;
     height: 60px; }
+  #seccionLegales a {
+    color: #3d3c3c; }
 
 * {
   Margin: 0;
